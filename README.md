@@ -50,3 +50,17 @@ The function returns the optimized delivery route as a list of Building objects.
 The time complexity is formally defined as NP-hard or NP-complete, NP for Nondeterministic Polynomial. That means for every input the time complexity increases in polynomial function in other wors it's O(n^2). The while loop iterate n-1 times because the start building is already visited. Within each iteration, the code iterates over all buildings to find the nearest unvisited building, which takes O(n) time. Therefore, the total time complexity is O(n*n) = O(n^2).
 
 The space complexity is O(n) because the visited set and the route list store up to n elements, one for each building.
+
+The output of running the file [delivery_route_optimization.py](delivery_route_optimization.py)
+```
+python delivery_route_optimization.py
+
+building number: 0, distance to other buildings: [1000, 1200, 1700]
+building number: 1, distance to other buildings: [1000, 1400, 800]
+building number: 3, distance to other buildings: [1700, 800, 900]
+building number: 0, distance to other buildings: [1000, 1200, 1700]
+
+Route in terms of builing number:
+0   1   3   0
+
+```
