@@ -46,3 +46,7 @@ The while loop continues until all buildings have been visited. At each iteratio
 Finally, the starting building is added to the end of the route to complete the cycle.
 
 The function returns the optimized delivery route as a list of Building objects.
+
+The time complexity is formally defined as NP-hard or NP-complete, NP for Nondeterministic Polynomial. That means for every input the time complexity increases in polynomial function in other wors it's O(n^2). The while loop iterate n-1 times because the start building is already visited. Within each iteration, the code iterates over all buildings to find the nearest unvisited building, which takes O(n) time. Therefore, the total time complexity is O(n*n) = O(n^2).
+
+The space complexity is O(n) because the visited set and the route list store up to n elements, one for each building.
