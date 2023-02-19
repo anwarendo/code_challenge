@@ -23,3 +23,14 @@ def delivery_route_optimization(buildings: List[Building], start: Building) -> L
         current_building = nearest_neighbor
     route.append(start)
     return route
+
+bldA = Building("A", [1000, 1400, 800])
+bldB = Building("B", [1200, 1400, 900])
+bldC = Building("C", [1700, 800, 900])
+bldStart = Building("S", [1000, 1200, 1700] )
+
+buildings = [bldA, bldB, bldC]
+
+print(delivery_route_optimization(buildings, bldStart))
+
+
